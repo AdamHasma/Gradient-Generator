@@ -33,6 +33,7 @@ div.layer2 {
 }
 
 button {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   line-height: 1;
   outline: none;
   cursor: pointer;
@@ -49,11 +50,13 @@ button {
 }
 
 button:hover {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   transition: box-shadow 700ms, margin-top 100ms;
   box-shadow: 0px 0px 500px rgba(255, 255, 255, 1);
 }
 
 button:active {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   transition: box-shadow 100ms, margin-op 100ms;
   box-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
   margin-top: 6px;
