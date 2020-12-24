@@ -29,10 +29,8 @@ function makeGradient() {
 }
 
 function changeBg() {
-  setTimeout(function() {
     layer1.style.backgroundImage = makeGradient();
     layer2.style.backgroundImage = makeGradient();
-  }, 0);
 }
 
 changeBg();
