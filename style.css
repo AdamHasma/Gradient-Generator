@@ -33,32 +33,34 @@ div.layer2 {
 }
 
 button {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background: rgba(28, 28, 28, 0.61);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   line-height: 1;
   outline: none;
   cursor: pointer;
   font-family: JetBrains Mono;
   font-size: 18px;
   font-weight: 600;
-  mix-blend-mode: screen;
-  color: black;
+  mix-blend-mode: multiply;
+  color: white;
   border-radius: 55px;
   border-style: none;
   padding: 20px 40px;
   position: fixed;
   transition: box-shadow 700ms, margin-top 100ms;
+  box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.25);
 }
 
 button:hover {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  transition: box-shadow 700ms, margin-top 100ms;
-  box-shadow: 0px 0px 500px rgba(255, 255, 255, 1);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition: box-shadow 300ms, margin-top 100ms;
+  box-shadow: 0px 0px 200px rgba(0, 0, 0, 0.4);
 }
 
 button:active {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  transition: box-shadow 100ms, margin-op 100ms;
-  box-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition: box-shadow 300ms, margin-op 100ms;
+  box-shadow: 0px 0px 500px rgba(0, 0, 0, 0.7);
   margin-top: 6px;
 }
 
@@ -109,12 +111,6 @@ h1 {
     font-size: 22px;
   }
 
-  button {
-    width: 90%;
-    left: unset;
-    top: unset;
-  }
-
   body {
     overflow: hidden;
     padding-top: 250px;
@@ -145,17 +141,26 @@ h1 {
     top: 90px;
     opacity: 0.4;
   }
+
   .title-s-c {
     margin-left: 20px;
   }
+
+  button {
+    width: 90%;
+    left: unset;
+    top: unset;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+  }
+
   button:hover {
     transition: unset;
-    box-shadow: unset;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
   }
 
   button:active {
-    transition: box-shadow 100ms, margin-op 100ms;
-    box-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
-    margin-top: 2px;
+    transition: margin-op 100ms;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+    margin-top: 4px;
   }
 }
