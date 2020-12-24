@@ -1,0 +1,87 @@
+body {
+  font-family: JetBrains Mono;
+  margin: 0;
+}
+
+  @font-face {
+    src: url("JetBrainsMono-Regular.woff2") format("woff2");
+    font-weight: 400;
+  }
+
+@font-face {
+  src: url("JetBrainsMono-Bold.woff2") format("woff2");
+  font-weight: 600;
+}
+
+#gradient {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, red, green);
+}
+
+div.layer2 {
+  mix-blend-mode: lighten;
+  background-image: linear-gradient(155deg, yellow, blue);
+}
+
+button {
+  line-height: 1;
+  outline: none;
+  cursor: pointer;
+  font-family: JetBrains Mono;
+  font-size: 18px;
+  font-weight: 600;
+  mix-blend-mode: screen;
+  color: black;
+  border-radius: 55px;
+  border-style: none;
+  padding: 20px 40px;
+  position: fixed;
+  top: 44%;
+  left: 39%;
+  transition: box-shadow 700ms, top 100ms;
+}
+
+button:hover {
+  transition: box-shadow 700ms, top 100ms;
+  box-shadow: 0px 0px 500px rgba(255, 255, 255, 1);
+}
+
+button:active{
+  transition: box-shadow 100ms, top 100ms;
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
+  top: 44.2%;
+}
+
+p {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.sat-container {
+  display: flex;
+}
+
+h1 {
+  color: black;
+  opacity: 0.4;
+  text-align: center;
+  margin:0;
+  font-size: 28px;
+}
+
+.settings-container{
+  position: relative;
+  right: 35px;
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.title-s-c{
+  margin-left: 70px;
+}

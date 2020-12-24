@@ -1,0 +1,8 @@
+Nice colors
+
+Demo: https://nice-colors.superhi.com
+
+Hue: 0 to 360
+Saturation: 50 to 100
+Lightness: 40 to 90
+Gradient: 0 to 360
