@@ -14,10 +14,18 @@ slideLight.onmousemove = function() {
   sliderAmount2.innerHTML = this.value;
 }
 
+slide.ontouchend = function() {
+  sliderAmount.innerHTML = this.value;
+}
+
+slideLight.ontouchend = function() {
+  sliderAmount2.innerHTML = this.value;
+}
+
 function makeColor() {
   let h = Math.random() * 360;
   let s = parseInt(slide.value);
-  let l =  parseInt(slideLight.value);
+  let l = parseInt(slideLight.value);
   return `hsl(${h}, ${s}%, ${l}%)`;
 }
 
@@ -29,8 +37,8 @@ function makeGradient() {
 }
 
 function changeBg() {
-    layer1.style.backgroundImage = makeGradient();
-    layer2.style.backgroundImage = makeGradient();
+  layer1.style.backgroundImage = makeGradient();
+  layer2.style.backgroundImage = makeGradient();
 }
 
 changeBg();
