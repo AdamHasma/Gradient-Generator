@@ -118,7 +118,9 @@ h1 {
     font-size: 22px;
   }
 
-  body {}
+  body {
+    overflow: hidden;
+  }
 
   input {
     width: 100px;
